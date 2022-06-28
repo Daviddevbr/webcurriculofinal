@@ -1,0 +1,347 @@
+*{
+    box-sizing:border-box;
+   
+
+}
+
+
+@font-face {
+    font-family: 'american_captainregular';
+    src: url('/fonts/american_captain-webfont.woff') format('woff');
+       
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticacondensed_regular';
+    src: url('/fonts/coolvetica_condensed_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'office_squareregular';
+    src: url('/fonts/office_square_df-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pixelmixregular';
+    src: url('/fonts/pixelmix-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*===background fundo foto===*/
+#quadrado{
+    position: absolute;
+    
+    left: -500px;
+    z-index: -1;
+    width: 70%;
+    height: 1000px;
+    border-radius: 700px 700px 0px 0px;
+    background-image: linear-gradient(to bottom, #f5d800, white);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+   
+}
+.titulo{
+    margin: 0px;
+    padding: 30px;
+    width: 100%;
+    background-color: #FFE200;
+    border-top:solid 10px black  ;
+    border-right:solid 10px black  ;
+    font-size: 20pt;
+    font-family: 'american_captainregular';
+    border-radius: 0px 0px 0px 100px;
+}
+/*===AREA DE INTRO===*/
+.corpo{
+  
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+}
+
+.biografia{
+    font-size: 19pt;
+    display: flex;
+    flex-direction:line;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'coolveticacondensed_regular';
+   
+}
+.corpoBiografia{
+    min-width: 320px;
+    width: 40%;
+   
+}
+.tituloBio{
+    font-family: 'american_captainregular';
+    font-size: 25pt;
+}
+#fotoPerfil{
+   width: 80%;
+   border:double 10px  black;
+   border-radius: 25%;
+   
+
+}
+.tituloSkills{
+    font-family: 'american_captainregular';
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logoSkills{
+    width: 70px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.logoSkills:hover{
+    cursor: pointer;
+    width: 75px;
+    transition: 0.5s;
+}
+/*===AREA DE GRADUACAO===*/
+#barratop{
+   
+    background-color: #FFE200;
+    border-radius: 20px 5px 20px 5px;
+    width: 100%;
+    height: 50px;
+    border-top:solid 5px black  ;
+    border-left:solid 5px black  ;
+ 
+
+}
+.corpograduacao{
+    position: relative;
+    font-size: 30px;
+}
+#titulohard{
+    font-size: 50pt;
+}
+.graduacao{
+    width: 100%;
+}
+#barra{
+    
+    background-color: #FFE200;
+    border-radius: 20px 5px 20px 5px;
+    width: 100%;
+    height: 50px;
+    border-bottom:solid 5px black  ;
+    border-right:solid 5px black  ;
+   
+}
+/*===AREA DESIGN===*/
+.corpoTituloDesign{
+    
+    margin:5% 5% 2% 5%;
+    background-color: #FFE200;
+ 
+    padding: 40px;
+    border-radius: 100px 25px 100px 25px;
+    
+}
+
+.artesDesign{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+}
+
+
+.fotosDesign{
+    width: 500px;
+    border-radius: 20px;
+}
+/*===AREA DE WEBDESIGN===*/
+.webDesign{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 200px 0px 200px;
+    
+}
+.corpowebst{
+    
+    display: flex;
+    flex-direction: column;
+}
+.corposite{
+
+    border-radius: 20px;
+    margin: 20px;
+    width: 500px;
+    min-width: 300px;
+    height: 333px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sobreprojeto{
+    width: 500px;
+}
+.modalWebDesign{
+  
+  
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFE200;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 100%;
+    height: 100%;
+
+}
+.tituloSite{
+    
+    font-family: 'office_squareregular';
+    font-size: 15pt;
+}
+.buttonWebDesign{
+    background-color: #FFE200;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: 'pixelmixregular';
+    margin: 10px;
+}
+.descrição{
+    background-color: #FFE200;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: 'pixelmixregular';
+
+}
+a{
+    text-decoration: none;
+    color:black;
+
+}
+.sobreprojeto{
+  
+    display: none;
+    flex-direction: column;
+    background-color: #f5d800;
+    width: 500px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    border: solid 3px black; 
+    border-radius: 10px;
+    scroll-behavior: auto;
+    border-radius: 5px 20px 5px 20px;
+}
+#closedesc{
+    transition: 1s;
+    position:relative;
+    left: 430px;
+    top: -15px;
+    width: 30px;
+    background-color: black;
+    color: #f5d800;
+    cursor: pointer;
+    font-size: 15pt;
+    border-radius: 10px 5px 10px 5px;
+}
+#closedesc:hover{
+    transition: 1s;
+    background-color: #f5d80083;
+    color: black;
+    
+}
+
+/*===AREA DE RODAPÉ===*/
+#titulofooter{
+    font-family: 'pixelmixregular';
+    position: relative;
+    padding: 1% 0% 0% 30%;
+}
+/*===ICONES DAS REDES===*/
+.redescontato{
+    background-color: #FFE200;
+    border-bottom:solid 10px black ;
+    border-left:solid 10px black ;
+}
+.redessocial{
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    width: 50px;
+    filter: grayscale(50%);
+    transition: 0.5s;
+}
+.redes:hover{
+    transition: 0.5s;
+    width: 55px;
+    filter: grayscale(0%);
+}
+.corpoTituloWebDesign{
+    font-family: 'american_captainregular';
+    margin:5% 5% 2% 5%;
+    background-color: #FFE200;
+   
+    padding: 40px;
+    border-radius: 100px 25px 100px 25px;
+
+}
+
+
+.copy{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+
+}
+
+
+/*===CSS DE TERCEIRO PARA MODIFICAR O SCROOL===*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFE200; 
+    border-radius: 10px;
+  }
+  
+  
